@@ -46,9 +46,7 @@ h2{
 }
 
 .quiz-container:hover {
-  cursor: pointer;
-  background-color: none;
-  color: gold;
+  cursor: pointer; 
 }
 
 

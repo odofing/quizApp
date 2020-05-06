@@ -1,6 +1,7 @@
 const question = document.getElementById('question'),
      options = Array.from(document.getElementsByClassName('quiz-text')),
      totalQuestion = document.querySelector('.total-question'),
+     maxScore = document.querySelector('.max-score'),
       TotalScore = document.querySelector('.score');
 
    // console.log(options);
@@ -63,6 +64,7 @@ const question = document.getElementById('question'),
 
      const correctQuestion = 20;
      const maxQuestions = 5;
+     const maxAnswers = 100;
 
 
     function startQuiz () {
@@ -86,8 +88,10 @@ if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
 
     questionCounter++;
 
-    // Display question counter 
+    // Display question and total score counters 
  totalQuestion.innerText = `${questionCounter}/${maxQuestions}`;
+ maxScore.innerText = `${score}/${maxAnswers}`;
+ 
  
    
 
@@ -179,7 +183,7 @@ selectedOption.parentElement.classList.add(optionPicked);
 // Create score increment function
 incrementScore = num => {
     score += num;
-    TotalScore.innerText = score;
+   // TotalScore.innerText = score;
   };
 
 startQuiz();
