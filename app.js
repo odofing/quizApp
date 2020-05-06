@@ -14,10 +14,10 @@ const question = document.getElementById('question'),
      let questions = [
          {
         question: "Who is the founder of StartNG internship program?",
-        option1: "<Jeffrey Ogah>",
-        option2: "<Onifade Seyi>",
-        option3: "<Emmanuel Owojori>",
-        option4: "<Mark Essien>",
+        option1: "Jeffrey Ogah",
+        option2: "Onifade Seyi",
+        option3: "Emmanuel Owojori",
+        option4: "Mark Essien",
         answer: 2
 
          },
@@ -88,6 +88,7 @@ if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
 
     // Display question counter 
  totalQuestion.innerText = `${questionCounter}/${maxQuestions}`;
+ 
    
 
 //Get random questions form the array
