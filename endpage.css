@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+.btn {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 7rem;
+    text-align: center;
+   align-items: center;
+    text-decoration: none;
+    background-color: white;
+    color: gold;
+  
+  }
+#end{
+   margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    color: gold;
+    font-size: 1.4rem;
+}
+
+ 

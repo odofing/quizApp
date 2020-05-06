@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz - Play</title>
+   
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main-header">StartNG Quiz Task</h1>
+    </header>
+    <div class="container">
+      <div id="quiz" class="inner-home">
+        <div class="inner-display">
+          <div class="display-item">
+            <p class="display-prefix">
+              Question
+            </p>
+            <h1 class="total-question"></h1>
+          </div>
+          <div class="display-score">
+            <p class="display-score">Score</p>
+            <h1 class="score"></h1>
+          </div>
+        </div>
+        <h2 id="question">What is the answer to this question? </h2>
+        <div class="quiz-container">
+            <p class="quiz-prefix">A</p>
+            <p class="quiz-text" data-number="1">option 1</p>
+        </div>
+        <div class="quiz-container">
+          <p class="quiz-prefix">B</p>
+          <p class="quiz-text" data-number="2">option 2</p>
+        </div>
+        <div class="quiz-container">
+            <p class="quiz-prefix">C</p>
+            <p class="quiz-text" data-number="3">option 3</p>
+        </div>
+        <div class="quiz-container">
+            <p class="quiz-prefix">D</p>
+            <p class="quiz-text" data-number="4">option 4</p>
+        </div>
+      </div>
+    </div>
+    <button id="next-Btn"class="btn">Next</button>
+    <footer>
+      <h4 class="main-footer">
+        <p>Copyright &copy;  2020  Gbadamosi</p>
+      </h4>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+  <script src="highscore.js"></script>
+</html>
