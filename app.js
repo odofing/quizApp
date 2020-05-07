@@ -83,7 +83,8 @@ function getNewQuestion () {
     // end the quiz then return to the ending page
 if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
     localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("/endpage.html");
+   // return window.location.assign("/endpage.html");
+     return window.location.href="endpage.html";
 }
 
     questionCounter++;
