@@ -162,7 +162,8 @@ selectedOption.parentElement.classList.add(optionPicked);
  */
 selectedOption.parentElement.classList.add(optionPicked);
 
- document.getElementById('next-Btn').addEventListener('click', function () {
+ document.getElementById('next-Btn').addEventListener('click', function (e) {
+     
 
     selectedOption.parentElement.classList.remove(optionPicked);
     
@@ -171,8 +172,9 @@ selectedOption.parentElement.classList.add(optionPicked);
     getNewQuestion();
 
 
-
+    e.preventDefault();
  });
+ 
  
  
 
