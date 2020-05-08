@@ -83,7 +83,6 @@ function getNewQuestion () {
     // end the quiz then return to the ending page
 if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
     localStorage.setItem("mostRecentScore", score);
-   // return window.location.assign("/endpage.html");
      return window.location.href="endpage.html";
 }
 
@@ -148,7 +147,7 @@ const selectedAnswer = selectedOption.dataset["number"];
 
  //console.log(selectedAnswer == currentQuestion.answer);
 
-
+/*
  
 selectedOption.parentElement.classList.add(optionPicked);
 
@@ -160,7 +159,7 @@ selectedOption.parentElement.classList.add(optionPicked);
 
  }, 2000);
 
-/*
+ */
 selectedOption.parentElement.classList.add(optionPicked);
 
  document.getElementById('next-Btn').addEventListener('click', function () {
@@ -175,7 +174,7 @@ selectedOption.parentElement.classList.add(optionPicked);
 
  });
  
-  */
+ 
 
      
     });
